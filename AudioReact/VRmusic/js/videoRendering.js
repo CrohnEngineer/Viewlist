@@ -22,7 +22,7 @@ videoRender.prototype={
 		this.energyFloor=document.createElement('a-circle');
 		this.energyFloor.setAttribute("radius",0.1);
 		this.energyFloor.setAttribute("rotation","-90 0 0");
-		this.energyFloor.setAttribute("color","#00D0D0");
+		this.energyFloor.setAttribute("color","red");
 		this.energyFloor.setAttribute("position","0 0.01 0")
 		this.scene.appendChild(this.energyFloor);
 

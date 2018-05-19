@@ -13,9 +13,12 @@
       <a-sky color="#000000"></a-sky>
       <!--<a-entity light="type:directional, color:#fff" position="0 1.6 0"></a-light>-->
       <!--<a-cylinder id="cylinder" color="#ff0000" position="0 0 -4"><a-cylinder>-->
-      
+       <a-entity id="parent" position="-0.5 5 2">
+        <a-text class="SongTitle" value="Hello, World!"></a-text>
+        </a-entity>
     </a-scene>
     <audio id="audio"></audio>
+     
     <div style="position:fixed; bottom: 0px; height:50px; width:100%; background-color:#eee; display:block" id="playPause"><a-href onclick="C.playPause">Play</a></div>
   </body>
 </html>
