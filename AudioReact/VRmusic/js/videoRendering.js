@@ -16,13 +16,18 @@ videoRender.prototype={
 		this.floor=document.createElement('a-circle');
 		this.floor.setAttribute("radius",radius);
 		this.floor.setAttribute("rotation","-90 0 0");
-		this.floor.setAttribute("color","#008080");
+        
+        this.floor.setAttribute("material","src: #backgroundDisco");
+
+        //this.floor.setAttribute("color","#008080");
+        
 		this.scene.appendChild(this.floor);
 
 		this.energyFloor=document.createElement('a-circle');
 		this.energyFloor.setAttribute("radius",0.1);
 		this.energyFloor.setAttribute("rotation","-90 0 0");
-		this.energyFloor.setAttribute("color","red");
+        this.energyFloor.setAttribute("material","src: #backgroundDisco2");
+        //this.energyFloor.setAttribute("color","red");
 		this.energyFloor.setAttribute("position","0 0.01 0")
 		this.scene.appendChild(this.energyFloor);
 
@@ -33,7 +38,7 @@ videoRender.prototype={
 			this.cylinders[n].setAttribute("position",Math.sin(angle)*radius+" 0 "+ (-1*Math.cos(angle)*radius));
 			this.cylinders[n].setAttribute("radius",size/2);
 			this.cylinders[n].setAttribute("scale","1 0.01 1");
-			this.cylinders[n].setAttribute("color","#808080");
+			this.cylinders[n].setAttribute("color","#8505b7");
 			this.scene.appendChild(this.cylinders[n])
 			if(n!=0 && n!=this.nBands-1){
 				this.cylinders[n+this.nBands-1]=document.createElement('a-cylinder');
